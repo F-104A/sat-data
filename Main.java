@@ -23,8 +23,16 @@ public class Main {
     }
 
     // make sure all data entered the ArrayList
-    System.out.println(totalScore);
-    System.out.println(totalScore.size());
+    //System.out.println(totalScore);
+
+    
+    // find the average
+    int sum = 0;
+    for(int i = 0; i < totalScore.size(); i++) {
+      sum += totalScore.get(i);
+    }
+    double average = sum / totalScore.size();
+    System.out.println("Average: " + average);
     
   }
 
